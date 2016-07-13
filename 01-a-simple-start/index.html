@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>React Itself</title>
+    </head>
+    <body>
+        <!-- This is the div our application will mount to -->
+        <div id="root"></div>
+
+        <!-- Load Facebook's React and React-DOM libraries -->
+        <script src="https://fb.me/react-15.2.1.min.js"></script>
+        <script src="https://fb.me/react-dom-15.2.1.min.js"></script>
+
+        <!-- Our application code -->
+        <script>
+            // Render(SomeReactComponent, toSomeHTMLElement)
+            ReactDOM.render(
+                React.createElement('h1', null, 'Our First React.js Component'),
+                document.getElementById('root')
+            );
+        </script>
+    </body>
+</html>
